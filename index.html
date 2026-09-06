@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AL ITTEHAD UMRAH SERVICES PRIVATE LIMITED - Umrah & Hajj packages, flight booking, hotel booking, car rental and visa assistance from Hojai, Assam.">
+  <title>AL ITTEHAD UMRAH SERVICES PRIVATE LIMITED</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#07583f;--green2:#0b7353;--gold:#c59a3a;--cream:#fbfaf4;--ink:#17352c;--white:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e8e3d6}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--green);font-size:15px}
+    .brand img{width:52px;height:52px;object-fit:contain}
+    nav{display:flex;gap:25px;align-items:center;font-size:14px;font-weight:600}
+    nav a:hover{color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;font-weight:700;border:1px solid transparent;transition:.2s}
+    .btn-primary{background:var(--green);color:white}
+    .btn-primary:hover{background:#043e2d;transform:translateY(-1px)}
+    .btn-gold{background:var(--gold);color:white}
+    .btn-outline{border-color:var(--green);color:var(--green);background:white}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,#e8f2ed 0,#f7f4e9 38%,#fbfaf4 70%);padding:70px 0 75px}
+    .hero:after{content:"☪";position:absolute;right:-40px;top:-100px;font-size:340px;color:rgba(197,154,58,.07);font-family:serif}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px;position:relative;z-index:1}
+    .eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:12px}
+    h1{font-size:clamp(38px,5vw,65px);line-height:1.06;color:var(--green);margin-bottom:18px}
+    h1 span{color:var(--gold)}
+    .hero p{font-size:18px;color:#496058;max-width:650px;margin-bottom:28px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .hero-logo{background:white;border:1px solid #e9e1ca;border-radius:28px;padding:25px;box-shadow:0 20px 60px rgba(7,88,63,.10);text-align:center}
+    .hero-logo img{width:100%;max-width:430px;height:auto}
+    section{padding:78px 0}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 42px}
+    .section-head h2{font-size:36px;color:var(--green);margin-bottom:8px}
+    .section-head p{color:#61726c}
+    .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .card{background:white;border:1px solid #e9e5d9;border-radius:20px;padding:25px 18px;text-align:center;box-shadow:0 8px 28px rgba(20,50,40,.05)}
+    .icon{font-size:34px;margin-bottom:12px}
+    .card h3{font-size:17px;color:var(--green);margin-bottom:6px}
+    .card p{font-size:13px;color:#687770}
+    .about{background:#f1f5ef}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+    .about-box{background:var(--green);color:white;border-radius:28px;padding:42px;position:relative;overflow:hidden}
+    .about-box:after{content:"✦";position:absolute;right:20px;bottom:-20px;font-size:160px;color:rgba(255,255,255,.07)}
+    .about-box h3{font-size:30px;margin-bottom:10px}
+    .about-box p{color:#e4eee9}
+    .points{display:grid;gap:15px}
+    .point{display:flex;gap:13px;align-items:flex-start;background:white;border-radius:15px;padding:16px;border:1px solid #e4e9e3}
+    .check{color:var(--gold);font-weight:900;font-size:20px}
+    .packages{background:white}
+    .package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .package{border:1px solid #e5e1d5;border-radius:22px;padding:28px;background:var(--cream)}
+    .package.featured{border:2px solid var(--gold);transform:translateY(-5px)}
+    .package h3{color:var(--green);font-size:22px}
+    .package .small{color:#7b8781;font-size:13px;margin:5px 0 18px}
+    .package li{list-style:none;padding:7px 0;border-bottom:1px dashed #ddd6c5;font-size:14px}
+    .package li:before{content:"✓";color:var(--green2);font-weight:800;margin-right:8px}
+    .cta{background:linear-gradient(135deg,var(--green),#0a7555);color:white;text-align:center;padding:70px 0}
+    .cta h2{font-size:38px;margin-bottom:10px}
+    .cta p{color:#dcece5;margin-bottom:25px}
+    footer{background:#073b2c;color:#dce7e2;padding:40px 0 25px}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px}
+    footer h3{color:white;margin-bottom:10px}
+    footer p,footer a{font-size:14px;color:#c8d8d1}
+    footer a:hover{color:white}
+    .copyright{text-align:center;border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:18px;font-size:12px;color:#a9c0b7}
+    .floating{position:fixed;right:18px;bottom:18px;z-index:30;display:flex;gap:10px}
+    .float-btn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:white;font-weight:800;box-shadow:0 8px 25px rgba(0,0,0,.2)}
+    .wa{background:#1da851}.call{background:var(--green)}
+    @media(max-width:850px){
+      nav{display:none}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding-top:45px}
+      .cards{grid-template-columns:repeat(2,1fr)}.package-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}.hero-logo{order:-1;max-width:560px;margin:auto}
+    }
+    @media(max-width:480px){.cards{grid-template-columns:1fr}.actions .btn{width:100%}h1{font-size:42px}.section-head h2,.cta h2{font-size:30px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><img src="logo.png" alt="AL ITTEHAD logo"><span>AL ITTEHAD<br>UMRAH SERVICES</span></a>
+    <nav>
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="https://wa.me/918638229485?text=Assalamu%20Alaikum%2C%20I%20want%20to%20know%20about%20your%20Umrah%20packages." target="_blank">WhatsApp Us</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Your Gateway to Holy Journeys</div>
+      <h1>Travel with <span>faith, comfort</span> & care.</h1>
+      <p>Complete travel assistance for Umrah & Hajj journeys, flights, hotels, car rental and visa assistance — serving pilgrims from Hojai, Assam.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://wa.me/918638229485?text=Assalamu%20Alaikum%2C%20I%20want%20to%20enquire%20about%20Umrah." target="_blank">🕋 Enquire for Umrah</a>
+        <a class="btn btn-outline" href="tel:+918638229485">📞 Call Now</a>
+      </div>
+    </div>
+    <div class="hero-logo"><img src="logo.png" alt="AL ITTEHAD UMRAH SERVICES PRIVATE LIMITED"></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Our Services</div><h2>Everything for your journey</h2><p>Reliable assistance from planning to travel.</p></div>
+    <div class="cards">
+      <div class="card"><div class="icon">🕋</div><h3>Umrah Packages</h3><p>Comfortable and thoughtfully arranged holy journeys.</p></div>
+      <div class="card"><div class="icon">🕌</div><h3>Hajj Packages</h3><p>Travel support for your sacred pilgrimage.</p></div>
+      <div class="card"><div class="icon">✈️</div><h3>Flight Booking</h3><p>Assistance with domestic and international flights.</p></div>
+      <div class="card"><div class="icon">🏨</div><h3>Hotel Booking</h3><p>Accommodation arrangements for your stay.</p></div>
+      <div class="card"><div class="icon">🚘</div><h3>Car Rental</h3><p>Transport support for convenient local travel.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-box"><div class="eyebrow">AL ITTEHAD</div><h3>Your Gateway to Holy Journeys</h3><p>We aim to make every pilgrimage journey organized, comfortable and stress-free, with personal assistance for important travel arrangements.</p></div>
+    <div>
+      <div class="section-head" style="text-align:left;margin:0 0 20px"><div class="eyebrow">Why Choose Us</div><h2>Journey with confidence</h2></div>
+      <div class="points">
+        <div class="point"><span class="check">✦</span><div><b>Personal assistance</b><br><small>Guidance throughout your travel arrangements.</small></div></div>
+        <div class="point"><span class="check">✦</span><div><b>Complete travel services</b><br><small>Umrah, Hajj, flights, hotels, cars and visa assistance in one place.</small></div></div>
+        <div class="point"><span class="check">✦</span><div><b>Based in Hojai, Assam</b><br><small>Conveniently located near Joynagar Madrassa.</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="packages" id="packages">
+  <div class="container">
+    <div class="section-head"><div class="eyebrow">Packages</div><h2>Umrah packages</h2><p>Ask us for the latest dates, hotel options and pricing.</p></div>
+    <div class="package-grid">
+      <div class="package"><h3>Economy</h3><div class="small">Value-focused pilgrimage</div><ul><li>Flight assistance</li><li>Hotel arrangements</li><li>Visa assistance</li><li>Transport options</li></ul><br><a class="btn btn-outline" href="https://wa.me/918638229485?text=Please%20send%20me%20your%20latest%20Economy%20Umrah%20package." target="_blank">Get Details</a></div>
+      <div class="package featured"><h3>Premium</h3><div class="small">Comfort & convenience</div><ul><li>Flight assistance</li><li>Selected hotel options</li><li>Visa assistance</li><li>Transport arrangements</li></ul><br><a class="btn btn-gold" href="https://wa.me/918638229485?text=Please%20send%20me%20your%20latest%20Premium%20Umrah%20package." target="_blank">Get Details</a></div>
+      <div class="package"><h3>Custom</h3><div class="small">Plan around your needs</div><ul><li>Flexible travel dates</li><li>Hotel preference</li><li>Flight options</li><li>Transport requirements</li></ul><br><a class="btn btn-outline" href="https://wa.me/918638229485?text=I%20want%20a%20custom%20Umrah%20package." target="_blank">Request Quote</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="container">
+    <h2>Ready for your holy journey?</h2>
+    <p>Contact AL ITTEHAD UMRAH SERVICES PRIVATE LIMITED for package details and travel assistance.</p>
+    <div class="actions" style="justify-content:center">
+      <a class="btn btn-gold" href="https://wa.me/918638229485?text=Assalamu%20Alaikum%2C%20I%20would%20like%20to%20enquire%20about%20your%20travel%20services." target="_blank">💬 WhatsApp: 8638229485</a>
+      <a class="btn" style="background:white;color:var(--green)" href="tel:+918822811154">📞 8822811154</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><h3>AL ITTEHAD UMRAH SERVICES PRIVATE LIMITED</h3><p>Your Gateway to Holy Journeys.</p></div>
+    <div><h3>Services</h3><p>Umrah & Hajj Packages<br>Flight Booking<br>Hotel Booking<br>Car Rental<br>Visa Assistance</p></div>
+    <div><h3>Visit / Contact</h3><p>MAIN ROAD, JOYNAGAR<br>NEAR JOYNAGAR MADRASSA<br>HOJAI, ASSAM - 782445<br><br>📞 8638229485<br>📞 8822811154</p></div>
+  </div>
+  <div class="container copyright">© 2026 AL ITTEHAD UMRAH SERVICES PRIVATE LIMITED. All rights reserved.</div>
+</footer>
+
+<div class="floating">
+  <a class="float-btn call" href="tel:+918638229485" aria-label="Call">☎</a>
+  <a class="float-btn wa" href="https://wa.me/918638229485" target="_blank" aria-label="WhatsApp">WA</a>
+</div>
+</body>
+</html>
